@@ -104,7 +104,7 @@ struct tss_struct {
 
 struct task_struct {
 /* these are hardcoded - don't touch */
-	long state;	/* -1 unrunnable, 0 runnable, >0 stopped */
+	long state;	/* -1 unrunnable, 0 runnable, >0 stopped */ // 任务到运行状态（-1：不可运行，0：可运行（就绪），>0：已停止）
 	long counter;
 	long priority;
 	long signal;
